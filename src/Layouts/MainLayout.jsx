@@ -4,11 +4,11 @@ import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
   return (
-    <div>
+    <main className='flex flex-col items-center justify-center'>
 
         <Header/>
         <Outlet />  
-    </div>
+    </main>
   )
 }
 

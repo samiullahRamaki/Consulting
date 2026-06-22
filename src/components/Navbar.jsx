@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return <>
@@ -6,13 +7,13 @@ const Navbar = () => {
 
 
         <ul className='flex gap-8 items-center justify-center '>
-            <li className='cursor-pointer'>Home</li>
-            <li className='cursor-pointer'>About</li>
-            <li className='cursor-pointer'>Services</li>
-            <li className='cursor-pointer'>Blog</li>
+            <Link to="/" className='cursor-pointer'>Home</Link >
+            <Link to="/about" className='cursor-pointer'>About</Link >
+            <Link to="/services" className='cursor-pointer'>Services</Link >
+            <Link to="/blog" className='cursor-pointer'>Blog</Link>
         </ul>
 
-            <button className='border py-2 px-6 rounded-3xl cursor-pointer hover:text-gray-600 transition-colors'>Contact</button>
+            <Link to="/contact" className='border py-2 px-6 rounded-3xl cursor-pointer hover:text-white/40 transition-colors'>Contact</Link>
   </div>
   </>
 }
