@@ -2,20 +2,21 @@ import React from 'react'
 import homeBg from "../../assets/homeBg.jpg";
 import { Link } from "react-router-dom";
 import Scroll from './Scroll';
+import OurServices from './OurServices';
 
 
 
 const Home = () => {
   return <>
 <div
-  className="relative w-full h-screen bg-cover bg-center"
+  className="relative w-full h-screen bg-cover bg-center pb-24"
   style={{ backgroundImage: `url(${homeBg})` }}
 >
   {/* overlay */}
   <div className="absolute inset-0 bg-black/60"></div>
 
   {/* content */}
-  <main className="relative z-10">
+  <main className="relative z-10 ">
     <div className="max-w-7xl mx-auto px-4 flex flex-col gap-10 justify-center h-screen">
       
       <h1 className="text-7xl text-white text-wrap max-w-xl w-full">
@@ -39,6 +40,11 @@ const Home = () => {
     </div>
 
   </main>
+      {/* Our Services Section */}
+
+    <div>
+      <OurServices/>
+    </div>
 </div>
 
   </>
