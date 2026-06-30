@@ -1,15 +1,18 @@
 import React from "react";
 import { LuCheck } from "react-icons/lu";
+import Chart from "./Chart";
 
 const OurApproach = () => {
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center p-5 mt-25">
       <main className="flex flex-col md:flex-row items-center justify-center gap-20 max-w-7xl w-full ">
-        <div className="relative rounded-3xl overflow-hidden">
+        <div className="relative rounded-3xl overflow-hidden flex items-center justify-center max-w-300 w-full">
           <img
             src="https://framerusercontent.com/images/ImUfonalQMOKWjsL2OcxwGINE.jpg?scale-down-to=1024&width=5081&height=3387"
-            className="w-full h-full object-cover"
+            className="w-auto h-auto max-w-none"
           />
+
+          <Chart />
         </div>
         <div className="flex flex-col gap-7">
           <div className="flex items-center gap-3">

@@ -33,10 +33,7 @@ const Header = () => {
   // Close menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (
-        headerRef.current &&
-        !headerRef.current.contains(event.target)
-      ) {
+      if (headerRef.current && !headerRef.current.contains(event.target)) {
         setOpen(false);
       }
     };
@@ -69,17 +66,18 @@ const Header = () => {
       className={`fixed top-5 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-7xl
       flex items-center justify-between bg-black/20 text-white/80 p-4 rounded-full
       transition-all duration-300 ${
-        hide
-          ? "-translate-y-24 opacity-0"
-          : "translate-y-0 opacity-100"
+        hide ? "-translate-y-24 opacity-0" : "translate-y-0 opacity-100"
       }`}
     >
       {/* Logo */}
-      <img
-        src="https://framerusercontent.com/images/yCXJEe4mAPqMjNVFhzw8oRDeh8.png"
-        alt="Logo"
-        className="w-28"
-      />
+
+      <Link to="/">
+        <img
+          src="https://framerusercontent.com/images/yCXJEe4mAPqMjNVFhzw8oRDeh8.png"
+          alt="Logo"
+          className="w-28"
+        />
+      </Link>
 
       {/* Desktop Menu */}
       <nav className="hidden md:block">
@@ -87,10 +85,7 @@ const Header = () => {
       </nav>
 
       {/* Mobile Menu Button */}
-      <button
-        className="md:hidden"
-        onClick={() => setOpen(!open)}
-      >
+      <button className="md:hidden" onClick={() => setOpen(!open)}>
         <FaList size={28} />
       </button>
 

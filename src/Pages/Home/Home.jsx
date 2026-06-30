@@ -5,6 +5,8 @@ import Scroll from "./Scroll";
 import OurServices from "./OurServices";
 import Request from "./Request";
 import OurApproach from "./OurApproach";
+import OurJourney from "./OurJourney.jsx";
+import WhyChooseUs from "./WhyChooseUs.jsx";
 
 const Home = () => {
   return (
@@ -56,6 +58,14 @@ const Home = () => {
 
         <div>
           <OurApproach />
+        </div>
+
+        <div>
+          <OurJourney />
+        </div>
+
+        <div>
+          <WhyChooseUs />
         </div>
       </div>
     </>
