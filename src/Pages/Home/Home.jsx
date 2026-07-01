@@ -7,6 +7,9 @@ import Request from "./Request";
 import OurApproach from "./OurApproach";
 import OurJourney from "./OurJourney.jsx";
 import WhyChooseUs from "./WhyChooseUs.jsx";
+import OurProcess from "./OurProcess.jsx";
+import OurCommitment from "./OurCommitment.jsx";
+import Testimonials from "./Testimonials.jsx";
 
 const Home = () => {
   return (
@@ -66,6 +69,18 @@ const Home = () => {
 
         <div>
           <WhyChooseUs />
+        </div>
+
+        <div>
+          <OurProcess />
+        </div>
+
+        <div>
+          <OurCommitment />
+        </div>
+
+        <div>
+          <Testimonials />
         </div>
       </div>
     </>

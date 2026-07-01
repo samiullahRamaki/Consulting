@@ -44,8 +44,15 @@ const WhyChooseUs = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row gap-5 mt-20">
-          {items.map((items, index) => (
-            <Card key={index} {...items} />
+          {items.map((item, index) => (
+            <div
+              key={index}
+              className={
+                index === 1 ? "md:border-x md:border-gray-200 px-5" : ""
+              }
+            >
+              <Card {...item} variant="default" />
+            </div>
           ))}
         </div>
       </main>
