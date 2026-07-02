@@ -67,7 +67,7 @@ const Testimonials = () => {
           }}
         >
           <div className="overflow-hidden">
-            <div className="flex max-w-7xl animate-[scroll_20s_linear_infinite] gap-5">
+            <div className="flex w-max animate-[scroll_30s_linear_infinite] gap-5">
               {[...Array(3)].map((_, i) => (
                 <div key={i} className="flex gap-5 shrink-0">
                   {items.map((item, index) => (

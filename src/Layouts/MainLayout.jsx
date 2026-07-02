@@ -1,15 +1,18 @@
-import React from 'react'
-import Header from '../components/Header';
+import React from "react";
+import Header from "../components/Header";
 import { Outlet } from "react-router-dom";
-
+import Footer from "../components/Footer";
 const MainLayout = () => {
   return (
-    <main className='flex flex-col items-center justify-center'>
+    <div className="">
+      <Header />
 
-        <Header/>
-        <Outlet />  
-    </main>
-  )
-}
+      <main>
+        <Outlet />
+      </main>
 
-export default MainLayout
+      <Footer />
+    </div>
+  );
+};
+export default MainLayout;

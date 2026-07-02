@@ -10,12 +10,13 @@ import WhyChooseUs from "./WhyChooseUs.jsx";
 import OurProcess from "./OurProcess.jsx";
 import OurCommitment from "./OurCommitment.jsx";
 import Testimonials from "./Testimonials.jsx";
+import OurBlog from "./OurBlog.jsx";
 
 const Home = () => {
   return (
     <>
       <div
-        className="relative w-full h-screen bg-cover bg-center pb-24"
+        className="relative w-full main-h-screen bg-cover bg-center pb-24"
         style={{ backgroundImage: `url(${homeBg})` }}
       >
         {/* overlay */}
@@ -50,38 +51,41 @@ const Home = () => {
           </div>
         </main>
         {/* Our Services Section */}
+      </div>
+      <div>
+        <OurServices />
+      </div>
 
-        <div>
-          <OurServices />
-        </div>
+      <div>
+        <Request />
+      </div>
 
-        <div>
-          <Request />
-        </div>
+      <div>
+        <OurApproach />
+      </div>
 
-        <div>
-          <OurApproach />
-        </div>
+      <div>
+        <OurJourney />
+      </div>
 
-        <div>
-          <OurJourney />
-        </div>
+      <div>
+        <WhyChooseUs />
+      </div>
 
-        <div>
-          <WhyChooseUs />
-        </div>
+      <div>
+        <OurProcess />
+      </div>
 
-        <div>
-          <OurProcess />
-        </div>
+      <div>
+        <OurCommitment />
+      </div>
 
-        <div>
-          <OurCommitment />
-        </div>
+      <div>
+        <Testimonials />
+      </div>
 
-        <div>
-          <Testimonials />
-        </div>
+      <div>
+        <OurBlog />
       </div>
     </>
   );
